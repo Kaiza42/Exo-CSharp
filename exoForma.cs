@@ -750,8 +750,247 @@ namespace MyApp // Note: actual namespace depends on the project name.
  //    }
  //}
 
+ //exo 46
+
+//string[] tableau;
+
+//tableau = new string[] { "yes", "no", "maybe", "i dont know", "Franchement" };
+
+//for(int n = 0; n <tableau.Length; n ++)
+//{
+//    Console.WriteLine(tableau[n]);
+
+//    if(tableau[n] == tableau[2])
+//    {
+
+//        Console.WriteLine("j'ai trouver l'élément que je souhaiter " + tableau[n]);
+//        break;
+//    }
+//}
+
+//exo 47
+
+//int compteur = 0;
+
+//while (true)
+//{
+//    compteur++;
+//    Console.WriteLine(compteur);
+
+//    if (compteur == 5)
+//    {
+//        Console.WriteLine("j'ai atteint le chiffre souhaiter " + compteur);
+//        break;
+//    }
+//}
+
+//exo 48
+
+//string phrases = "rtyuavegfefgegegegzafghhf";
+
+//for(int n = 0; n < phrases.Length; n++)
+//{
+
+//    if (phrases[n] == 'a' || phrases[n] =='e' )
+//    {
+//        Console.WriteLine("trouver " + phrases[n]);
+//        continue;
+//    }
+//    Console.WriteLine(phrases[n]);
+//}
+
+//exo 49
+
+//while (true)
+//{
+//    string saisie = Console.ReadLine();
+
+//    if (saisie == "stop")
+//    {
+//        Console.WriteLine("Le mot choisie est trouver");
+//        break;
+//    }
+//    else
+//    {
+//        Console.WriteLine("ce n'est pas le bon mot");
+//    }
+//}
+
+//exo 50
+
+//je déclare ma liste avec des doubon
+//List<string> liste = new List<string> { "Oui", "Non","a", "peut etre","a", "je sais pas", "Oui" };
+
+////Je déclare ma liste non ordonner qui ne prends pas de Doublon
+//HashSet<string> antiDoublon = new HashSet<string>();
+
+////j'affiche 1 par 1 les élément de Ma "Liste" qui seront dans "doublonOrNot"
+//foreach (string doublonOrNot in liste)
+//{
+//    //Je créer une Variable Booléan Pour savoir si vrai ou faux l'élément que j'ajoute a ma liste non ordonner est unique ou non
+//    bool doubon = antiDoublon.Add(doublonOrNot);
+
+//    // la conditoon pour dire si c'est un doubon bah sa fait un truc 
+//    if (!doubon)
+//    {
+//        //L'affichage du doublon en question
+//        Console.WriteLine("Il y a un doubon " + doublonOrNot);
+//        //L'arret'
+//        break;
+//    }
+//    //l'affichage des élément de la "liste" 1 par 1 
+//    Console.WriteLine(doublonOrNot);
+//}
+
+//exo 51 
+
+// for (int n = 0; n <= 10; n++)
+// {
+    
+//     for (int c = 0; c <= 10; c++)
+//     {
+//         int j = c * n;
+//         Console.WriteLine("La multiplication donne " + c + "*" + n + "=" + j);
+
+//     }
+// }
+
+  //exo 52
+// for(int n = 0; n < 4; n++)
+//   {
+      
+//       for(int c = 0; c < 3; c++)
+//       {
+//           Console.Write("X");
+//       }
+//       Console.WriteLine("X");
+//   }
+
+ //exo 53
+
+ //int hauteur = 10;
+
+ //for (int n = 0; n <= hauteur; n++)
+ //{
+ //    for (int j = 0; j <= hauteur - n; j++)
+ //    {
+ //        Console.Write(" ");
+ //    }
+
+ //    for (int c = 0; c < n; c++)
+ //    {
+ //        Console.Write(c + " ");
+ //    }
+ //    Console.WriteLine();
+ //}
+
+//exo 54
+
+// var elements = new List<List<object>> {
+//     new List<object> { 5, 89, 79, 4, false },
+//     new List<object> { 8, 9, 12, "azed", 7.7, 9 },
+//     new List<object> { 7.12, "aba", 4689, true, 3 }
+// };
+
+// //parcours la list 
+// for(int i = 0; i <elements.Count; i++)
+// {
+//     //parccours les sous list 
+//     for(int n = 0; n < elements[i].Count; n++)
+//     {
+//         Console.WriteLine(elements[i][n]);
+//     }
+// }
+
+  //exo 55
+
+  //var list_0 = new List<object> { 5, 89, 79, 4, false };
+  //var list_1 = new List<object> { 8, 9, 12, "azed", 7.7 };
 
 
+  //    for (int i = 0; i < list_0.Count; i++)
+  //    {
+  //        Console.WriteLine(list_0[i] + "  " + list_1[i]);
+  //    }
+
+  //exo 56
+
+  //double[] matrix_0 = { 5, 89, 79, 4, 56 };
+  //double[] matrix_1 = { 8, 9.4, 12, 78, 7.7 };
+
+
+
+  //for(int i = 0; i < matrix_0.Length ; i++)
+  //{
+  //        matrix_0[i] = matrix_0[i] + matrix_1[i];
+  //}
+  //foreach(double resultat in matrix_0)
+  //{
+  //    Console.WriteLine(resultat);
+  //}
+
+  //exo 57
+
+  //List<string> chaine = new List<string> { "envie", "de", "canner" };
+
+  //for (int i = 0; i < chaine.Count; i++)
+  //{
+  //    for(int n = 0; n < chaine[i].Length ; n++)
+  //    {
+  //        Console.WriteLine(chaine[i][n]);
+  //    }
+  //}
+
+  //exo 58
+
+  //for(double x = 0; x <= 4; x++)
+  //{
+
+
+  //    for (int y = 0; y <= 4; y++)
+  //    {
+  //        Console.Write($" ({x},{y}) "  );
+  //    }
+  //    Console.WriteLine();
+  //}
+
+  //exo 59
+
+
+  //int c = 9;
+  //for(int n = 0; n <= c; n++)
+  //{
+
+  //    for(int x = 0; x <= c; x++)
+  //    {
+
+  //        Console.Write($" {n}{x} ");
+  //    }
+  //    Console.WriteLine();
+
+  //}
+
+  //exo 60
+
+  //int[,] matrice =
+  //{
+  //    {1, 2 ,3 ,4 },
+  //    {5, 6, 7, 8},
+  //    {9, 10, 11, 12},
+  //    {13, 14, 15, 16}
+  //};
+
+  //int diago = matrice.GetLength(0);
+  //Console.WriteLine("premiere diago : ");
+  //for(int i = 0; i < diago; i++)
+  //{
+  //    Console.WriteLine(matrice[i, i] + " ");
+  //}
+
+  //for (int i = 0; i < diago; i++)
+  //{
+  //    Console.WriteLine(matrice[i, diago - i -1] + " ");
+  //}
 
 }
      }

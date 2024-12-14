@@ -67,4 +67,98 @@ for(char l = 'a'; l <= 'y'; l++)
       }
   }
 
+  // boucle infinie 
+// declaration de ma varibale 
+int chiffre = 0; 
 
+ while (true){
+  // le principe de la "while (true)" est que while seras toujours "true" donc tounreras a l'infinie 
+
+  //chiffre +1
+chiffre++; 
+// La condition pour sortir de cette boucle infinie
+if( chiffre == 6){
+    // affichage du resultat
+  Console.WriteLine("Chiffre trouver " + chiffre);
+//   ce qui permet de sortir de la boucle 
+  break;
+}
+// Pourquoi mettre l'affichage apres la condition de sortie de boucle ? pour éviter la répétition de la condition de sortie de boucle
+Console.WriteLine(chiffre);
+ }
+
+
+
+
+ Random chiffreMystere = new Random();
+ int numeroMystere = chiffreMystere.Next(1, 51);
+ int resultEssaie = 0;
+ 
+
+ Console.WriteLine("--- Trouver le nombre Mystère ---");
+ while (true)
+ {
+     resultEssaie += 1;
+
+     
+     Console.ForegroundColor = ConsoleColor.White;
+     Console.Write("\tVeuillez saisir un nombre : ");
+     int saisieUtilisateur = int.Parse(Console.ReadLine());
+     
+     if(saisieUtilisateur != numeroMystere)
+     {
+
+     
+         if (saisieUtilisateur < numeroMystere)
+         {
+         Console.ForegroundColor = ConsoleColor.Red;
+         Console.WriteLine("\t\tLe nombre mystere est plus grand");
+         }
+         else if(saisieUtilisateur > numeroMystere)
+         {
+             Console.ForegroundColor = ConsoleColor.Red;
+             Console.WriteLine("\t\tLe nombre mystere est plus petit");
+         };
+     }
+     else
+     {
+         Console.ForegroundColor = ConsoleColor.Green;
+         Console.WriteLine("\nBravo !!!! vous avez trouber le nombre mystere !\n");
+         Console.WriteLine("Vous avez trouver en " + resultEssaie + " coups.");
+             Console.ForegroundColor = ConsoleColor.White;
+         break;
+     }
+ }
+
+//Afficher Deux liste cote a cote 
+// celui la je le trouve interessant Pour moi j'aller le complexifier alors que ? bah c'est si simple
+ var list_0 = new List<object> { 5, 89, 79, 4, false };
+var list_1 = new List<object> { 8, 9, 12, "azed", 7.7 };
+
+  // vue qu'elle sont egale i va compter le meme nombre d'élément pour chaque list non ? 
+    for(int i = 0; i < list_0.Count; i++)
+    {
+      //  et la je les affiche cote a cote. 
+        Console.WriteLine(list_0[i] + "  " + list_1[i]);
+    }
+
+
+// celui ci je le trouve pertinent 
+
+// Donc ta une liste pour le moment tous va bien Mais maintenant la liste a des SOUS liste 
+var elements = new List<List<object>> {
+    new List<object> { 5, 89, 79, 4, false },
+    new List<object> { 8, 9, 12, "azed", 7.7, 9 },
+    new List<object> { 7.12, "aba", 4689, true, 3 }
+};
+
+// Ici On parcours la LISTE 
+for(int i = 0; i <elements.Count; i++)
+{
+    //Et la les sous list 
+    for(int n = 0; n < elements[i].Count; n++)
+    {
+      //Mais du coup Pourquoi [i][n] car I parcours La liste Principal et N parcours les sous Liste Trop bien.
+        Console.WriteLine(elements[i][n]);
+    }
+}
