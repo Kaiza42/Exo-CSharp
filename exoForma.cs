@@ -818,15 +818,15 @@ namespace MyApp // Note: actual namespace depends on the project name.
 
 //exo 50
 
-//je déclare ma liste avec des doubon
-//List<string> liste = new List<string> { "Oui", "Non","a", "peut etre","a", "je sais pas", "Oui" };
+// // je déclare ma liste avec des doubon
+// List<string> liste = new List<string> { "Oui", "Non","a", "peut etre","a", "je sais pas", "Oui" };
 
-////Je déclare ma liste non ordonner qui ne prends pas de Doublon
-//HashSet<string> antiDoublon = new HashSet<string>();
+// //Je déclare ma liste non ordonner qui ne prends pas de Doublon
+// HashSet<string> antiDoublon = new HashSet<string>();
 
-////j'affiche 1 par 1 les élément de Ma "Liste" qui seront dans "doublonOrNot"
-//foreach (string doublonOrNot in liste)
-//{
+// //j'affiche 1 par 1 les élément de Ma "Liste" qui seront dans "doublonOrNot"
+// foreach (string doublonOrNot in liste)
+// {
 //    //Je créer une Variable Booléan Pour savoir si vrai ou faux l'élément que j'ajoute a ma liste non ordonner est unique ou non
 //    bool doubon = antiDoublon.Add(doublonOrNot);
 
@@ -840,7 +840,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
 //    }
 //    //l'affichage des élément de la "liste" 1 par 1 
 //    Console.WriteLine(doublonOrNot);
-//}
+// }
+
 
 //exo 51 
 
@@ -991,6 +992,80 @@ namespace MyApp // Note: actual namespace depends on the project name.
   //{
   //    Console.WriteLine(matrice[i, diago - i -1] + " ");
   //}
+
+ //exo 61
+
+ //List<string> jsaispas = new List<string> { "Bonjour", "Aurevoir", "Salut" };
+
+
+ //jsaispas.Reverse();
+
+ //foreach( string a in jsaispas)
+ //{
+ //    Console.WriteLine(a);
+ //}
+
+ //exo 62 
+//  int[] liste = { 1, 2,3 , 4, 5 };  
+
+//  bool croissant = true;
+//  bool decroissant = true;
+//  for (int i = 0; i < liste.Length -1; i++)
+//  {
+//      if (liste[i] > liste[i + 1])
+//      {
+//          //si liste n'est pas croissante alors false 
+//          croissant = false;
+//      }
+//      if(liste[i] < liste[i +1])
+//      {
+//          //si la liste n'est pas décroissante alors false
+//          decroissant = false;
+//      }
+//  }
+ //Du coup si croissant = false on passe a la suivante 
+//  if (croissant)
+//  {
+//      Console.WriteLine("croissant");
+//  }
+//  //si la condition que décroise = false on passe a la suivante
+//  else if(decroissant)
+//  {
+//      Console.WriteLine("décroissant");
+//  }
+//  // du coup non ordonnée par élimination
+//  else
+//  {
+//      Console.WriteLine("liste non ordonée");
+//  }
+
+//exo 63 
+
+//List<string> liste = new List<string> { "a", "a","a", "a" };
+
+//int compteur =  1;
+
+//HashSet<string> antiDoublon = new HashSet<string>();
+
+
+//foreach (string doublonOrNot in liste)
+//{
+
+//    bool doubon = antiDoublon.Add(doublonOrNot);
+
+
+//    if (!doubon)
+//    {
+
+
+//        //L'arret'
+//        compteur++; ;
+//        Console.WriteLine("il y a +" + compteur + " doublon");
+//    }
+
+
+//}
+
 
 }
      }
